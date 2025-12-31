@@ -15,7 +15,7 @@ cp $STATIC/css/style.css $DIST/style.$CSS_HASH.css
 sed \
   -e "s/{{JS_HASH}}/$JS_HASH/g" \
   -e "s/{{CSS_HASH}}/$CSS_HASH/g" \
-  $STATIC/index.html.template > $DIST/index.html
+  $STATIC/index.template.html > $DIST/index.html
 
 echo "UI build completed"
 ls -l $DIST
