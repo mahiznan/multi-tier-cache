@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Tier Cache Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.{{CSS_HASH}}.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Multi-Tier Cache Platform</h1>
+        <p>NGINX · Local Cache · Redis · Database</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>API Test</h2>
+        <p>Click the button below to fetch data through the multi-tier cache.</p>
+
+        <button id="loadBtn">Fetch Data</button>
+
+        <pre id="responseBox">Response will appear here...</pre>
+    </section>
+
+    <section class="card">
+        <h2>Cache Layers</h2>
+        <ul>
+            <li>Browser Cache (static assets)</li>
+            <li>NGINX Reverse Proxy Cache</li>
+            <li>Application Local Cache</li>
+            <li>Redis Distributed Cache</li>
+            <li>Database Source of Truth</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© Multi-Tier Cache Demo</p>
+</footer>
+
+<script src="app.{{JS_HASH}}.js"></script>
+</body>
+</html>
