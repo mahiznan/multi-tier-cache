@@ -1,5 +1,4 @@
 .idea
-
 service/mvnw
 service/*.cmd
 service/.mvn
